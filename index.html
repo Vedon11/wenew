@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header with sun icon centered -->
+      <div
+        class="header"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 20px;
+        "
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+          alt="Sun Icon"
+          style="width: 40px; height: 40px"
+        />
+        <h1
+          style="
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000;
+            font-family: 'Raleway', sans-serif;
+          "
+        >
+          Weather Forecast
+        </h1>
+      </div>
+
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeather()">Get Weather</button>
+
+      <div id="weatherResult"></div>
+    </div>
+  </body>
+</html>
